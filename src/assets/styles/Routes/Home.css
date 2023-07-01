@@ -1,0 +1,140 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #DEF0F4;
+  height: 100%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  max-width: 370px;
+  max-height: 282px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-block-end: 0.9rem;
+}
+
+.hero-text h2 {
+  color: #4C9FB5;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-block-end: 2rem;
+}
+
+.hero-text p {
+  color: #637381;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  margin-block-end: 2rem;
+}
+
+.hero-text>.hero-btn {
+  border-radius: 5px;
+  background: #60B1C7;
+  color: #DEF0F4;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.hero-image img {
+  max-width: 488.858px;
+  max-height: 556.192px;
+  height: 100%;
+  width: 100%;
+}
+
+#dentistas {
+  background-color: #fafafa;
+  width: 100%;
+  height: 100%;
+  padding-block-start: 2.5rem;
+}
+
+#dentistas>h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  line-height: 2.5rem;
+  margin-block-end: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.5rem;
+  width: 100%;
+  padding: 1rem;
+  margin-block-end: 3rem;
+}
+
+@media (max-width: 900px) {
+
+  .hero-image img {
+    display: none;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+
+.dark .main-container {
+  background-color: #1a1a1a;
+}
+
+.dark .hero-text h1 {
+  color: #DEF0F4;
+} 
+
+.dark #dentistas {
+  background-color: #1a1a1a;
+}
+
+.dark .hero-text p {
+  color: #DEF0F4;
+}
+
+.dark #dentistas>h2{
+  color: #DEF0F4;
+}

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&display=swap');
+
+:root {
+  --fontBase: 'Noto Sans KR', sans-serif;
+  --fontLight: 300;
+  --fontRegular: 500;
+  --fontBold: 700;
+  --fontBlack: 900;
+  --colorDark: #1a1a1a;
+  --colorLight: #fafafa;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: var(--fontBase);
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+li {
+  list-style-type: none;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+#root {
+  isolation: isolate;
+}
+
+
+a {
+  color: var(--colorLight);
+}
+
+a:hover {
+  color: var(--colorLight);
+}
+
+.dark {
+  background-color: var(--colorDark);
+  color: var(--colorLight);
+}
+
+.dark a {
+  color: var(--colorLight);
+}
+
+.light {
+  background-color: var(--colorLight);
+  color: rgb(6, 6, 6);
+}
+
+.light a {
+  color: rgb(6, 6, 6);
+}
+
+.light .card {
+  border: 0.5px solid rgb(136, 136, 136);
+}
+
+.hero-btn {
+  border-radius: 5px;
+  background: #60B1C7;
+  color: #DEF0F4 !important;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

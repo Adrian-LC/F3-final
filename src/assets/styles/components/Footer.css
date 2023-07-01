@@ -1,0 +1,13 @@
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+.dark .footer-container {
+	background-color: hsl(240, 10%, 16%);
+}
